@@ -18,6 +18,7 @@ def getCompanys(ori_url, num, tag, cla, search_result):
   blocks = soup.find_all(tag, class_=cla)
   #それぞれのブロックについて企業名を取得
   if num == 1:
+      companys.append('')
       companys.append('検索結果' + search_result)
   companys.append('【' + search_result + '】')
   for block in blocks:
